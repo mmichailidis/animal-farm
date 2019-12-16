@@ -2,14 +2,14 @@ package com.asdt.farm;
 
 public class Dog extends Animal {
     private final int STAMINA = 10;
-    private final int FOOD = 3;
+    private final int ENERGY = 3;
     private String name;
     private int stamina;
-    private int food;
+    private int energy;
 	public Dog(String string) {
         name = string;
         stamina = STAMINA;
-        food = FOOD;
+        energy = ENERGY;
 	}
 
     @Override
@@ -19,25 +19,25 @@ public class Dog extends Animal {
 
     @Override
     public boolean isHungry() {
-        return food <= 0;
+        return energy <= 0;
     }
 
     @Override
     public void move() {
         System.out.println(name + " is moving");
-        food--;
+        energy--;
         stamina--;
         printState();
     }
 
     private void printState() {
-        System.out.println(String.format("%s: stamina: %s, food: %s\n", name, stamina, food));
+        System.out.println(String.format("%s: stamina: %s, energy: %s\n", name, stamina, energy));
     }
 
     @Override
     public void eat() {
         System.out.println(name + " got hungry and is eating");
-        food = FOOD;
+        energy = ENERGY;
         printState();
     }
 
@@ -45,7 +45,7 @@ public class Dog extends Animal {
     public void sleep() {
         System.out.println(name + " got tired and is sleeping");
         stamina = STAMINA;
-        food = 0;
+        energy = 0;
         printState();
     }
 
