@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/dranidis/animal-farm/workflows/Java%20CI/badge.svg)](https://github.com/dranidis/animal-farm/actions)
+
 # animal-farm
 An example simulating a farm of animals using design patterns.
 
