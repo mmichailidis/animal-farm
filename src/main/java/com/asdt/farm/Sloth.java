@@ -1,16 +1,16 @@
 package com.asdt.farm;
 
-public class Dog extends Animal {
-    private final int STAMINA = 10;
-    private final int ENERGY = 3;
+public class Sloth extends Animal {
+    private final int STAMINA = 2;
+    private final int ENERGY = 2;
     private String name;
     private int stamina;
     private int energy;
-	public Dog(String string) {
+    public Sloth(String string) {
         name = string;
         stamina = STAMINA;
         energy = ENERGY;
-	}
+    }
 
     @Override
     protected boolean isHungry() {
@@ -23,29 +23,29 @@ public class Dog extends Animal {
     }
 
     @Override
-    public void move() {
+    protected void move() {
         System.out.println(name + " is moving");
         energy--;
         stamina--;
         printState();
     }
 
-    private void printState() {
-        System.out.println(String.format("%s: stamina: %s, energy: %s\n", name, stamina, energy));
-    }
-
     @Override
-    public void eat() {
+    protected void eat() {
         System.out.println(name + " got hungry and is eating");
         energy = ENERGY;
         printState();
     }
 
     @Override
-    public void sleep() {
+    protected void sleep() {
         System.out.println(name + " got tired and is sleeping");
         stamina = STAMINA;
         energy = 0;
         printState();
+    }
+
+    private void printState() {
+        System.out.println(String.format("%s: stamina: %s, energy: %s\n", name, stamina, energy));
     }
 }

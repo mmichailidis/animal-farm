@@ -9,9 +9,11 @@ public class App {
         Farm farm = new Farm();
 
         Dog dog = new Dog("Lucy");
+        Sloth sloth = new Sloth("Flash");
 
         farm.accept(dog);
+        farm.accept(sloth);
 
-        farm.simulate(3);
+        farm.simulateSteps(25);
     }
 }

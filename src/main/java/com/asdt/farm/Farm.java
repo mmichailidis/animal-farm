@@ -1,16 +1,22 @@
 package com.asdt.farm;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Farm {
-    Animal animal;
 
-    public void accept(Dog dog) {
-        animal = dog;
+    private List<Animal> animals = new ArrayList<>();
+
+    public void accept(Animal animal) {
+        animals.add(animal);
     }
-
-    public void simulate(int days) {
-        for (int i = 0; i < days; i++) {
-            System.out.println("DAY: " + (i+1));
-            animal.simulateDay();
+    
+    public void simulateSteps (int steps) {
+        for (int i = 0; i < steps; i++) {
+            System.out.println("Step: " + (i + 1));
+            for (Animal animal: animals) {
+                animal.simulateStep();
+            }
         }
     }
 
