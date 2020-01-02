@@ -1,7 +1,5 @@
 package com.asdt.farm;
 
-import java.util.function.Function;
-
 public class Farmer implements Observer<Integer> {
     private Feeder feeder;
     private Integer refills = 0;
@@ -10,7 +8,7 @@ public class Farmer implements Observer<Integer> {
     public void inform(Integer current) {
         if (current == 0) {
             System.out.println("Farmer was informed that the feeder is empty and refills it.");
-            feeder.setCurrentFood(10);
+            feeder.setCurrentFood(SimpleFoodFactory.getInstance().makeFood());
             refills++;
         }
     }
