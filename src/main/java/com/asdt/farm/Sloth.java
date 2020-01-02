@@ -6,7 +6,9 @@ public class Sloth extends Animal {
     private String name;
     private int stamina;
     private int energy;
-    public Sloth(String string) {
+
+    public Sloth(Feeder feeder, String string) {
+        super(feeder);
         name = string;
         stamina = STAMINA;
         energy = ENERGY;
@@ -14,12 +16,12 @@ public class Sloth extends Animal {
 
     @Override
     protected boolean isHungry() {
-        return (energy <= 0);
+        return energy <= 0;
     }
 
     @Override
     protected boolean isTired() {
-        return (stamina <= 0);
+        return stamina <= 0;
     }
 
     @Override
@@ -46,6 +48,6 @@ public class Sloth extends Animal {
     }
 
     private void printState() {
-        System.out.println(String.format("%s: stamina: %s, energy: %s\n", name, stamina, energy));
+        System.out.printf("%s: stamina: %s, energy: %s\n", name, stamina, energy);
     }
 }
