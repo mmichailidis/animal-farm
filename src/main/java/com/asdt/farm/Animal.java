@@ -1,18 +1,33 @@
 package com.asdt.farm;
 
 public abstract class Animal {
-    private Feeder feeder;
-
+    protected Feeder feeder;
     private AnimalState state;
-	protected abstract boolean isHungry();
+
+    protected EatStrategy eatStrategy;
+
+    protected abstract boolean isHungry();
+
     protected abstract boolean isTired();
-	protected abstract void move();
-	protected abstract void eat();
+
+    protected abstract void move();
+
+    protected abstract void eat();
+
     protected abstract void sleep();
 
-    public Animal (Feeder feeder) {
+    public Animal(Feeder feeder, EatStrategy eatStrategy) {
+        this.eatStrategy = eatStrategy;
         state = new AnimalRunningState();
         this.feeder = feeder;
+    }
+
+    public EatStrategy getEatStrategy() {
+        return eatStrategy;
+    }
+
+    public void setEatStrategy(EatStrategy eatStrategy) {
+        this.eatStrategy = eatStrategy;
     }
 
     public void setState(AnimalState newState) {
@@ -23,7 +38,7 @@ public abstract class Animal {
         state.act(state, this);
     }
 
-    protected void decreaseFood(){
+    protected void decreaseFood() {
         feeder.decreaseFood();
     }
 }
