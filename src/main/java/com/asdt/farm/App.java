@@ -12,14 +12,16 @@ public class App {
         Farm farm = new Farm(farmer, feeder);
 
         Dog dog = new Dog(feeder, "Lucy");
-        Dog dog2 = new Dog(feeder, "Dolly");
+        Dog dog2 = new Dog(feeder, new ExtraEatStrategy(), "Dolly");
         Dog dog3 = new Dog(feeder, "Molly");
         Sloth sloth = new Sloth(feeder, "Flash");
+        Sloth sloth2 = new Sloth(feeder, new SimpleEatStrategy(), "Zoom");
 
         farm.accept(dog);
         farm.accept(dog2);
         farm.accept(dog3);
         farm.accept(sloth);
+        farm.accept(sloth2);
 
         farm.simulateSteps(45);
 
