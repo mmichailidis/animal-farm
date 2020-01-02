@@ -6,11 +6,13 @@ public class Dog extends Animal {
     private String name;
     private int stamina;
     private int energy;
-	public Dog(String string) {
+
+    public Dog(Feeder feeder, String string) {
+        super(feeder);
         name = string;
         stamina = STAMINA;
         energy = ENERGY;
-	}
+    }
 
     @Override
     protected boolean isHungry() {
@@ -38,6 +40,7 @@ public class Dog extends Animal {
     public void eat() {
         System.out.println(name + " got hungry and is eating");
         energy = ENERGY;
+        decreaseFood();
         printState();
     }
 
@@ -47,5 +50,9 @@ public class Dog extends Animal {
         stamina = STAMINA;
         energy = 0;
         printState();
+    }
+
+    public String getName() {
+        return name;
     }
 }

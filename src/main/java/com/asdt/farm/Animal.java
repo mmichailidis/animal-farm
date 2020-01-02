@@ -1,6 +1,7 @@
 package com.asdt.farm;
 
 public abstract class Animal {
+    private Feeder feeder;
 
     private AnimalState state;
 	protected abstract boolean isHungry();
@@ -9,8 +10,9 @@ public abstract class Animal {
 	protected abstract void eat();
     protected abstract void sleep();
 
-    public Animal () {
+    public Animal (Feeder feeder) {
         state = new AnimalRunningState();
+        this.feeder = feeder;
     }
 
     public void setState(AnimalState newState) {
@@ -21,5 +23,7 @@ public abstract class Animal {
         state.act(state, this);
     }
 
-
+    protected void decreaseFood(){
+        feeder.decreaseFood();
+    }
 }
