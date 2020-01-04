@@ -1,5 +1,6 @@
 package com.asdt.farm.farmers;
 
+import com.asdt.farm.FarmRandom;
 import com.asdt.farm.Feeder;
 import com.asdt.farm.Logger;
 import com.asdt.farm.food.SpecialFoodFactory;
@@ -14,7 +15,7 @@ public class RichFarmer implements Farmer {
     private final Random random;
 
     public RichFarmer() {
-        random = new Random();
+        random = FarmRandom.getInstance().getRandom();
     }
 
     @Override

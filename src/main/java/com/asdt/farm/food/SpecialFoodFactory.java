@@ -1,13 +1,14 @@
 package com.asdt.farm.food;
 
+import com.asdt.farm.FarmRandom;
 import com.asdt.farm.food.homemade.Food;
 import com.asdt.farm.food.homemade.SpecialFood;
 import com.asdt.farm.food.imported.ImportedFood;
 import com.asdt.farm.food.imported.SpecialImportedFood;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -33,11 +34,21 @@ public class SpecialFoodFactory implements FoodFactory {
      */
     @Override
     public List<Food> makeFood(final Integer count) {
-        return IntStream.rangeClosed(1, count)
-                .boxed()
-                .map(ignore -> new Random().nextBoolean()
-                        ? new SpecialFood()
-                        : new SpecialImportedFoodAdapter(new SpecialImportedFood()))
-                .collect(Collectors.toList());
+        List<Food> foodList = new ArrayList<>();
+        for(int i = 0; i<count; i++) {
+            if(FarmRandom.getInstance().getRandom().nextBoolean()) {
+                foodList.add(new SpecialFood());
+            } else {
+                foodList.add(new SpecialImportedFoodAdapter(new SpecialImportedFood()));
+            }
+        }
+        return foodList;
+
+    //     return IntStream.rangeClosed(1, count)
+    //             .boxed()
+    //             .map(ignore -> FarmRandom.getInstance().getRandom().nextBoolean()
+    //                     ? new SpecialFood()
+    //                     : new SpecialImportedFoodAdapter(new SpecialImportedFood()))
+    //             .collect(Collectors.toList());
     }
 }

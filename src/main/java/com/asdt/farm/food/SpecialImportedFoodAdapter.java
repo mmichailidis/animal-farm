@@ -1,7 +1,6 @@
 package com.asdt.farm.food;
 
 import com.asdt.farm.food.homemade.Food;
-import com.asdt.farm.food.imported.SimpleImportedFood;
 import com.asdt.farm.food.imported.SpecialImportedFood;
 
 public class SpecialImportedFoodAdapter implements Food, FoodOrigin {

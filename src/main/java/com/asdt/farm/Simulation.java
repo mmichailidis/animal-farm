@@ -10,7 +10,7 @@ public class Simulation {
 
     }
 
-    public void start() {
+    public void start(int steps) {
         final Feeder feeder = new Feeder();
         final PoorFarmer poorFarmer = new PoorFarmer();
         final RichFarmer richFarmer = new RichFarmer();
@@ -28,7 +28,7 @@ public class Simulation {
         farm.accept(sloth);
         farm.accept(sloth2);
 
-        farm.simulateSteps(45);
+        farm.simulateSteps(steps);
 
         // Logger.log("\nFeeder food left : " + feeder.);
         Logger.log("Total refills : " + poorFarmer.getRefills() + "\n");

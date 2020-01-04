@@ -5,7 +5,8 @@ package com.asdt.farm;
  */
 public class App {
     public static void main(String[] args) {
-        (new Simulation()).start();
+        FarmRandom.isfake = true;
+        (new Simulation()).start(4);
     }
 
 }

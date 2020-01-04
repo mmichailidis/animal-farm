@@ -1,8 +1,7 @@
 package com.asdt.farm.food.imported;
 
+import com.asdt.farm.FarmRandom;
 import com.asdt.farm.food.FoodOrigins;
-
-import java.util.UUID;
 
 import static com.asdt.farm.food.FoodOrigins.ENGLAND;
 
@@ -11,6 +10,6 @@ public class SpecialImportedFood extends AbstractFood {
     private final static FoodOrigins ORIGIN = ENGLAND;
 
     public SpecialImportedFood() {
-        super(UUID.randomUUID().toString(), POWER, ORIGIN);
+        super(FarmRandom.getInstance().getRandomUUID(), POWER, ORIGIN);
     }
 }
