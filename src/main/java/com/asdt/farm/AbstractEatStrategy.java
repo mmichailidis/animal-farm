@@ -9,7 +9,7 @@ public class AbstractEatStrategy {
         for (int i = 0; i < times; i++) {
             final Food food = feeder.getFood();
 
-            System.out.println("The food that was eaten was from : "
+            Logger.log("The food that was eaten was from : "
                     + ((FoodOrigin) food).getFoodOrigin()
                     + " and provided "
                     + food.getEnergy()

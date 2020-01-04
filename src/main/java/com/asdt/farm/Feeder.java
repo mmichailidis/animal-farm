@@ -54,7 +54,7 @@ public class Feeder {
             }
         }
 
-        stuff.forEach((k, v) -> System.out.println("From "
+        stuff.forEach((k, v) -> Logger.log("From "
                 + k.getName().split("\\.")[k.getName().split("\\.").length -1 ]
                 + " was left : " + v.size()));
     }

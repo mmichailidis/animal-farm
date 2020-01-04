@@ -25,7 +25,7 @@ public class Farm {
 
     public void simulateSteps(final int steps) {
         for (int i = 0; i < steps; i++) {
-            System.out.println("Step: " + (i + 1));
+            Logger.log("Step: " + (i + 1));
             for (Animal animal : animals) {
                 animal.simulateStep();
             }

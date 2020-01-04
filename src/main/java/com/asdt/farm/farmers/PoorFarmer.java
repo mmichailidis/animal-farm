@@ -1,6 +1,7 @@
 package com.asdt.farm.farmers;
 
 import com.asdt.farm.Feeder;
+import com.asdt.farm.Logger;
 import com.asdt.farm.food.SimpleFoodFactory;
 import com.asdt.farm.food.SimpleImportedFoodAdapter;
 import com.asdt.farm.food.homemade.SimpleFood;
@@ -21,7 +22,7 @@ public class PoorFarmer implements Farmer {
         if (feeder.getFoodTypeCount(SimpleFood.class) == 0
                 && feeder.getFoodTypeCount(SimpleImportedFoodAdapter.class) == 0) {
 
-            System.out.println("Farmer was informed that the feeder is empty and refills it. He will use simple food");
+            Logger.log("Farmer was informed that the feeder is empty and refills it. He will use simple food");
             feeder.addFood(SimpleFoodFactory.getInstance().makeFood(random.nextInt(2) + 5));
             refills++;
         }
