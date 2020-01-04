@@ -16,7 +16,7 @@ public abstract class Animal {
 
     protected abstract void sleep();
 
-    public Animal(Feeder feeder, EatStrategy eatStrategy) {
+    public Animal(final Feeder feeder, final EatStrategy eatStrategy) {
         this.eatStrategy = eatStrategy;
         state = new AnimalRunningState();
         this.feeder = feeder;
@@ -26,7 +26,7 @@ public abstract class Animal {
         return eatStrategy;
     }
 
-    public void setEatStrategy(EatStrategy eatStrategy) {
+    public void setEatStrategy(final EatStrategy eatStrategy) {
         this.eatStrategy = eatStrategy;
     }
 
@@ -36,9 +36,5 @@ public abstract class Animal {
 
     public void simulateStep() {
         state.act(state, this);
-    }
-
-    protected void decreaseFood() {
-        feeder.decreaseFood();
     }
 }

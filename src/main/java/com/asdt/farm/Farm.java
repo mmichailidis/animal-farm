@@ -1,21 +1,29 @@
 package com.asdt.farm;
 
+import com.asdt.farm.farmers.Farmer;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Farm {
 
     private List<Animal> animals = new ArrayList<>();
+    private List<Farmer> farmers = new ArrayList<>();
 
-    public Farm(Farmer farmer, Feeder feeder) {
-        farmer.setFeeder(feeder);
+    public Farm(final Feeder feeder, final Farmer... farmers) {
+        for (final Farmer vL : farmers) {
+            vL.setFeeder(feeder);
+        }
+
+        this.farmers.addAll(Arrays.asList(farmers));
     }
 
-    public void accept(Animal animal) {
+    public void accept(final Animal animal) {
         animals.add(animal);
     }
 
-    public void simulateSteps(int steps) {
+    public void simulateSteps(final int steps) {
         for (int i = 0; i < steps; i++) {
             System.out.println("Step: " + (i + 1));
             for (Animal animal : animals) {
@@ -25,14 +33,13 @@ public class Farm {
     }
 
     /**
-     *
      * @param type Dog.class , Sloth.class etc
-     * @param <T> the *.class requested from parameter
+     * @param <T>  the *.class requested from parameter
      * @return All the items matching the requested class
      */
-    public <T> List<T> listAllOf(Class<T> type) {
-        List<T> toReturn = new ArrayList<>();
-        for (Animal vL : animals) {
+    public <T> List<T> listAllOf(final Class<T> type) {
+        final List<T> toReturn = new ArrayList<>();
+        for (final Animal vL : animals) {
             if (type.isInstance(vL)) {
                 toReturn.add(type.cast(vL));
             }

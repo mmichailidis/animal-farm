@@ -1,5 +1,8 @@
 package com.asdt.farm;
 
+import com.asdt.farm.farmers.PoorFarmer;
+import com.asdt.farm.farmers.RichFarmer;
+
 import java.util.List;
 
 /**
@@ -8,14 +11,15 @@ import java.util.List;
 public class App {
     public static void main(String[] args) {
         final Feeder feeder = new Feeder();
-        final Farmer farmer = new Farmer();
-        Farm farm = new Farm(farmer, feeder);
+        final PoorFarmer poorFarmer = new PoorFarmer();
+        final RichFarmer richFarmer = new RichFarmer();
+        final Farm farm = new Farm(feeder, poorFarmer, richFarmer);
 
-        Dog dog = new Dog(feeder, "Lucy");
-        Dog dog2 = new Dog(feeder, new ExtraEatStrategy(), "Dolly");
-        Dog dog3 = new Dog(feeder, "Molly");
-        Sloth sloth = new Sloth(feeder, "Flash");
-        Sloth sloth2 = new Sloth(feeder, new SimpleEatStrategy(), "Zoom");
+        final Dog dog = new Dog(feeder, "Lucy");
+        final Dog dog2 = new Dog(feeder, new ExtraEatStrategy(), "Dolly");
+        final Dog dog3 = new Dog(feeder, "Molly");
+        final Sloth sloth = new Sloth(feeder, "Flash");
+        final Sloth sloth2 = new Sloth(feeder, new SimpleEatStrategy(), "Zoom");
 
         farm.accept(dog);
         farm.accept(dog2);
@@ -25,14 +29,23 @@ public class App {
 
         farm.simulateSteps(45);
 
-        System.out.println("\nFeeder food left : " + feeder.getFood());
-        System.out.println("Total refills : " + farmer.getRefills());
+        // System.out.println("\nFeeder food left : " + feeder.);
+        System.out.println("Total refills : " + poorFarmer.getRefills() + "\n");
+        feeder.printLeftoverFood();
 
-        final List<Dog> animals = farm.listAllOf(Dog.class);
+        final List<Dog> dogs = farm.listAllOf(Dog.class);
 
         System.out.println("\nAll the dogs contained in the farm : \n");
 
-        for (Dog vL : animals) {
+        for (Dog vL : dogs) {
+            System.out.println(vL.getName());
+        }
+
+        final List<Sloth> sloths = farm.listAllOf(Sloth.class);
+
+        System.out.println("\nAll the sloths contained in the farm : \n");
+
+        for (Sloth vL : sloths) {
             System.out.println(vL.getName());
         }
     }

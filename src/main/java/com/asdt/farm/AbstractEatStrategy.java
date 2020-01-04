@@ -1,9 +1,22 @@
 package com.asdt.farm;
 
+import com.asdt.farm.food.FoodOrigin;
+import com.asdt.farm.food.homemade.Food;
+
 public class AbstractEatStrategy {
-    protected void eat(Feeder feeder, Integer times) {
+    protected Integer eat(final Feeder feeder, final Integer times) {
+        int energyAdded = 0;
         for (int i = 0; i < times; i++) {
-            feeder.decreaseFood();
+            final Food food = feeder.getFood();
+
+            System.out.println("The food that was eaten was from : "
+                    + ((FoodOrigin) food).getFoodOrigin()
+                    + " and provided "
+                    + food.getEnergy()
+                    + " energy");
+
+            energyAdded += food.getEnergy();
         }
+        return energyAdded;
     }
 }
