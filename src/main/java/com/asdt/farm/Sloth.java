@@ -7,8 +7,15 @@ public class Sloth extends Animal {
     private int stamina;
     private int energy;
 
+    public Sloth(Feeder feeder, EatStrategy eatStrategy, String string) {
+        super(feeder, eatStrategy);
+        name = string;
+        stamina = STAMINA;
+        energy = ENERGY;
+    }
+
     public Sloth(Feeder feeder, String string) {
-        super(feeder);
+        super(feeder, new ExtraEatStrategy());
         name = string;
         stamina = STAMINA;
         energy = ENERGY;
@@ -36,6 +43,7 @@ public class Sloth extends Animal {
     protected void eat() {
         System.out.println(name + " got hungry and is eating");
         energy = ENERGY;
+        eatStrategy.eat(feeder);
         printState();
     }
 

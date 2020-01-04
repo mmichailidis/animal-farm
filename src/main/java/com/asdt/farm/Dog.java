@@ -7,8 +7,15 @@ public class Dog extends Animal {
     private int stamina;
     private int energy;
 
+    public Dog(Feeder feeder, EatStrategy eatStrategy, String string) {
+        super(feeder, eatStrategy);
+        name = string;
+        stamina = STAMINA;
+        energy = ENERGY;
+    }
+
     public Dog(Feeder feeder, String string) {
-        super(feeder);
+        super(feeder, new SimpleEatStrategy());
         name = string;
         stamina = STAMINA;
         energy = ENERGY;
@@ -40,7 +47,7 @@ public class Dog extends Animal {
     public void eat() {
         System.out.println(name + " got hungry and is eating");
         energy = ENERGY;
-        decreaseFood();
+        eatStrategy.eat(feeder);
         printState();
     }
 
