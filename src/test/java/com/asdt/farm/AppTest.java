@@ -89,11 +89,11 @@ public class AppTest {
         assertEquals(list1, list2);
     }
 
-    // @Test
+    // @Test Ignore this test
     public void testSameOutput() {
         StringBuilder contentBuilder = new StringBuilder();
         try (Stream<String> stream = Files.lines(
-                Paths.get("/home/dimitris/git/playground/asdt_class_2019/animal-farm/animal-farm/output"),
+                Paths.get("........."),
                 StandardCharsets.UTF_8)) {
             stream.forEach(s -> contentBuilder.append(s).append("\n"));
         } catch (IOException e) {
