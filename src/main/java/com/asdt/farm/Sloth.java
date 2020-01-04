@@ -33,7 +33,7 @@ public class Sloth extends Animal {
 
     @Override
     protected void move() {
-        System.out.println(name + " is moving");
+        Logger.log(name + " is moving");
         energy--;
         stamina--;
         printState();
@@ -41,21 +41,24 @@ public class Sloth extends Animal {
 
     @Override
     protected void eat() {
-        System.out.println(name + " got hungry and is eating");
-        energy = ENERGY;
-        eatStrategy.eat(feeder);
+        Logger.log(name + " got hungry and is eating");
+        energy = eatStrategy.eat(feeder);
         printState();
     }
 
     @Override
     protected void sleep() {
-        System.out.println(name + " got tired and is sleeping");
+        Logger.log(name + " got tired and is sleeping");
         stamina = STAMINA;
         energy = 0;
         printState();
     }
 
+    public String getName() {
+        return name;
+    }
+
     private void printState() {
-        System.out.printf("%s: stamina: %s, energy: %s\n", name, stamina, energy);
+        Logger.log(String.format("%s: stamina: %s, energy: %s\n", name, stamina, energy));
     }
 }

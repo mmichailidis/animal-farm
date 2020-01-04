@@ -4,7 +4,7 @@ public class SimpleEatStrategy extends AbstractEatStrategy implements EatStrateg
     private final static Integer TIMES = 1;
 
     @Override
-    public void eat(Feeder feeder) {
-        eat(feeder, TIMES);
+    public Integer eat(final Feeder feeder) {
+        return eat(feeder, TIMES);
     }
 }
