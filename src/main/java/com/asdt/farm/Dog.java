@@ -46,8 +46,7 @@ public class Dog extends Animal {
     @Override
     public void eat() {
         System.out.println(name + " got hungry and is eating");
-        energy = ENERGY;
-        eatStrategy.eat(feeder);
+        energy = eatStrategy.eat(feeder);
         printState();
     }
 
