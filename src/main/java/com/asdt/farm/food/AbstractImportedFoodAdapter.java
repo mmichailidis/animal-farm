@@ -3,10 +3,10 @@ package com.asdt.farm.food;
 import com.asdt.farm.food.homemade.Food;
 import com.asdt.farm.food.imported.AbstractImportedFood;
 
-public class ImportedFoodAdapter implements Food, FoodOrigin {
+public abstract class AbstractImportedFoodAdapter implements Food, FoodOrigin {
     private AbstractImportedFood importedFood;
 
-    public ImportedFoodAdapter(final AbstractImportedFood importedFood) {
+    public AbstractImportedFoodAdapter(final AbstractImportedFood importedFood) {
         this.importedFood = importedFood;
     }
 
