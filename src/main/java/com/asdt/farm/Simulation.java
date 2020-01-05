@@ -1,5 +1,9 @@
 package com.asdt.farm;
 
+import com.asdt.farm.animals.Dog;
+import com.asdt.farm.animals.ExtraEatStrategy;
+import com.asdt.farm.animals.SimpleEatStrategy;
+import com.asdt.farm.animals.Sloth;
 import com.asdt.farm.farmers.PoorFarmer;
 import com.asdt.farm.farmers.RichFarmer;
 

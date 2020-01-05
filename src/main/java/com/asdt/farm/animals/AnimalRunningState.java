@@ -1,4 +1,4 @@
-package com.asdt.farm;
+package com.asdt.farm.animals;
 
 public class AnimalRunningState implements AnimalState {
 
@@ -7,7 +7,7 @@ public class AnimalRunningState implements AnimalState {
         animal.move();
         if (animal.isTired()) {
             animal.setState(new AnimalSleepingState());
-        } else if (animal.isHungry()){
+        } else if (animal.isHungry()) {
             animal.setState(new AnimalEatingState());
         }
     }

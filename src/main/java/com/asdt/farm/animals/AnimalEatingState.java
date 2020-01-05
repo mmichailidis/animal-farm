@@ -1,4 +1,4 @@
-package com.asdt.farm;
+package com.asdt.farm.animals;
 
 public class AnimalEatingState implements AnimalState {
 

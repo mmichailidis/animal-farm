@@ -1,5 +1,7 @@
-package com.asdt.farm;
+package com.asdt.farm.animals;
 
+import com.asdt.farm.Feeder;
+import com.asdt.farm.Logger;
 import com.asdt.farm.food.FoodOrigin;
 import com.asdt.farm.food.homemade.Food;
 
