@@ -16,6 +16,11 @@ public class SimpleImportedFoodAdapter implements Food, FoodOrigin {
     }
 
     @Override
+    public String getName() {
+        return importedFood.getName();
+    }
+
+    @Override
     public Integer getEnergy() {
         return importedFood.getPower();
     }

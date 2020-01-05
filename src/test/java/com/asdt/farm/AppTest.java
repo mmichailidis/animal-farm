@@ -16,6 +16,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Stream;
 
+import com.asdt.farm.util.FarmRandom;
+import com.asdt.farm.util.Logger;
 import org.junit.Test;
 
 /**

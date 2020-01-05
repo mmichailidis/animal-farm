@@ -1,8 +1,8 @@
 package com.asdt.farm.farmers;
 
-import com.asdt.farm.FarmRandom;
+import com.asdt.farm.util.FarmRandom;
 import com.asdt.farm.Feeder;
-import com.asdt.farm.Logger;
+import com.asdt.farm.util.Logger;
 import com.asdt.farm.food.SpecialFoodFactory;
 import com.asdt.farm.food.SpecialImportedFoodAdapter;
 import com.asdt.farm.food.homemade.SpecialFood;
