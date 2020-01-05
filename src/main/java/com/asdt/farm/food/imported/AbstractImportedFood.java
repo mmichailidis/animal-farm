@@ -3,13 +3,13 @@ package com.asdt.farm.food.imported;
 import com.asdt.farm.food.FoodOrigin;
 import com.asdt.farm.food.FoodOrigins;
 
-public abstract class AbstractFood implements ImportedFood, FoodOrigin {
+public abstract class AbstractImportedFood implements ImportedFood, FoodOrigin {
     private final String identification;
     private final Integer power;
     private String name;
     private FoodOrigins foodOrigins;
 
-    protected AbstractFood(final String identification,
+    protected AbstractImportedFood(final String identification,
                            final Integer power,
                            final String name,
                            final FoodOrigins foodOrigins) {

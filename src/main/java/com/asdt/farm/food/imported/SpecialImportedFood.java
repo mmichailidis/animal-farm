@@ -5,7 +5,7 @@ import com.asdt.farm.food.FoodOrigins;
 
 import static com.asdt.farm.food.FoodOrigins.ENGLAND;
 
-public class SpecialImportedFood extends AbstractFood {
+public class SpecialImportedFood extends AbstractImportedFood {
     private final static Integer POWER = 2;
     private final static FoodOrigins ORIGIN = ENGLAND;
     private final static String NAME = "ImportedSpecialFood";
