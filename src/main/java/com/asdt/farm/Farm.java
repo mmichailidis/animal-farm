@@ -1,5 +1,6 @@
 package com.asdt.farm;
 
+import com.asdt.farm.animals.Animal;
 import com.asdt.farm.farmers.Farmer;
 
 import java.util.ArrayList;

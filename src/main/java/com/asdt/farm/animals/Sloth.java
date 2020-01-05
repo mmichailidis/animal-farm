@@ -1,4 +1,7 @@
-package com.asdt.farm;
+package com.asdt.farm.animals;
+
+import com.asdt.farm.Feeder;
+import com.asdt.farm.Logger;
 
 public class Sloth extends Animal {
     private final int STAMINA = 2;
