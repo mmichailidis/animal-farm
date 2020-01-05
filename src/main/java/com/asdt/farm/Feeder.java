@@ -20,7 +20,7 @@ public class Feeder {
 
     public void addFood(final List<Food> newFood) {
         this.currentFood.addAll(newFood);
-        Collections.shuffle(this.currentFood);
+        Collections.shuffle(this.currentFood, FarmRandom.getInstance().getRandom());
     }
 
     public <T> Long getFoodTypeCount(final Class<T> clazz) {
@@ -33,8 +33,8 @@ public class Feeder {
         return count;
         // Same implementation but in Java8 streams
         // return currentFood.stream()
-        //         .filter(clazz::isInstance)
-        //         .count();
+        // .filter(clazz::isInstance)
+        // .count();
     }
 
     public Food getFood() {
@@ -44,18 +44,26 @@ public class Feeder {
     }
 
     public void printLeftoverFood() {
-        final Map<Class<?>, List<Food>> stuff = new HashMap<>();
-        for (final Food vL : currentFood) {
-            if (stuff.containsKey(vL.getClass())) {
-                stuff.get(vL.getClass()).add(vL);
-            } else {
-                stuff.put(vL.getClass(), new ArrayList<>());
-                stuff.get(vL.getClass()).add(vL);
-            }
-        }
+        // final Map<Class<?>, List<Food>> stuff = new HashMap<>();
+        // for (final Food vL : currentFood) {
+        //     if (stuff.containsKey(vL.getClass())) {
+        //         stuff.get(vL.getClass()).add(vL);
+        //     } else {
+        //         stuff.put(vL.getClass(), new ArrayList<>());
+        //         stuff.get(vL.getClass()).add(vL);
+        //     }
+        // }
 
-        stuff.forEach((k, v) -> Logger.log("From "
-                + k.getName().split("\\.")[k.getName().split("\\.").length -1 ]
-                + " was left : " + v.size()));
+        // for (Entry<Class<?>, List<Food>> entry : stuff.entrySet()) {
+        //     Class<?> k = entry.getKey();
+        //     List<Food> v = entry.getValue();
+        //     Logger.log("From "
+        //     + k.getName().split("\\.")[k.getName().split("\\.").length -1 ]
+        //     + " was left : " + v.size());
+        // }
+
+        // stuff.forEach((k, v) -> Logger.log("From "
+        //         + k.getName().split("\\.")[k.getName().split("\\.").length -1 ]
+        //         + " was left : " + v.size()));
     }
 }

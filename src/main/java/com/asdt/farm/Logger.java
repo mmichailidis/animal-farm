@@ -19,8 +19,12 @@ public class Logger {
         return sb.toString();
     }
 
-	public static void collectInString(boolean b) {
+    public static void collectInString(boolean b) {
         inString = b;
-	}
+    }
+
+    public static void reset() {
+        sb = new StringBuffer();
+    }
 
 }

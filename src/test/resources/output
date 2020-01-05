@@ -1,0 +1,471 @@
+Step: 1
+Lucy is moving
+Lucy: stamina: 9, energy: 2
+
+Dolly is moving
+Dolly: stamina: 9, energy: 2
+
+Molly is moving
+Molly: stamina: 9, energy: 2
+
+Flash is moving
+Flash: stamina: 1, energy: 1
+
+Zoom is moving
+Zoom: stamina: 1, energy: 1
+
+Step: 2
+Lucy is moving
+Lucy: stamina: 8, energy: 1
+
+Dolly is moving
+Dolly: stamina: 8, energy: 1
+
+Molly is moving
+Molly: stamina: 8, energy: 1
+
+Flash is moving
+Flash: stamina: 0, energy: 0
+
+Zoom is moving
+Zoom: stamina: 0, energy: 0
+
+Step: 3
+Lucy is moving
+Lucy: stamina: 7, energy: 0
+
+Dolly is moving
+Dolly: stamina: 7, energy: 0
+
+Molly is moving
+Molly: stamina: 7, energy: 0
+
+Flash got tired and is sleeping
+Flash: stamina: 2, energy: 0
+
+Zoom got tired and is sleeping
+Zoom: stamina: 2, energy: 0
+
+Step: 4
+Lucy got hungry and is eating
+Farmer was informed that the feeder is empty and refills it. He will use simple food
+Farmer was informed that the feeder is empty and refills it. He will use special food
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Lucy: stamina: 7, energy: 2
+
+Dolly got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 1 energy
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Dolly: stamina: 7, energy: 2
+
+Molly got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Molly: stamina: 7, energy: 1
+
+Flash got hungry and is eating
+The food that was eaten was from : TEXAS and provided 1 energy
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Flash: stamina: 2, energy: 2
+
+Zoom got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Zoom: stamina: 2, energy: 2
+
+Step: 5
+Lucy is moving
+Lucy: stamina: 6, energy: 1
+
+Dolly is moving
+Dolly: stamina: 6, energy: 1
+
+Molly is moving
+Molly: stamina: 6, energy: 0
+
+Flash is moving
+Flash: stamina: 1, energy: 1
+
+Zoom is moving
+Zoom: stamina: 1, energy: 1
+
+Step: 6
+Lucy is moving
+Lucy: stamina: 5, energy: 0
+
+Dolly is moving
+Dolly: stamina: 5, energy: 0
+
+Molly got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Molly: stamina: 6, energy: 2
+
+Flash is moving
+Flash: stamina: 0, energy: 0
+
+Zoom is moving
+Zoom: stamina: 0, energy: 0
+
+Step: 7
+Lucy got hungry and is eating
+The food that was eaten was from : ENGLAND and provided 2 energy
+Lucy: stamina: 5, energy: 2
+
+Dolly got hungry and is eating
+The food that was eaten was from : TEXAS and provided 1 energy
+Farmer was informed that the feeder is empty and refills it. He will use simple food
+The food that was eaten was from : TEXAS and provided 1 energy
+Dolly: stamina: 5, energy: 2
+
+Molly is moving
+Molly: stamina: 5, energy: 1
+
+Flash got tired and is sleeping
+Flash: stamina: 2, energy: 0
+
+Zoom got tired and is sleeping
+Zoom: stamina: 2, energy: 0
+
+Step: 8
+Lucy is moving
+Lucy: stamina: 4, energy: 1
+
+Dolly is moving
+Dolly: stamina: 4, energy: 1
+
+Molly is moving
+Molly: stamina: 4, energy: 0
+
+Flash got hungry and is eating
+The food that was eaten was from : TEXAS and provided 1 energy
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Flash: stamina: 2, energy: 2
+
+Zoom got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Zoom: stamina: 2, energy: 2
+
+Step: 9
+Lucy is moving
+Lucy: stamina: 3, energy: 0
+
+Dolly is moving
+Dolly: stamina: 3, energy: 0
+
+Molly got hungry and is eating
+Farmer was informed that the feeder is empty and refills it. He will use special food
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Molly: stamina: 4, energy: 1
+
+Flash is moving
+Flash: stamina: 1, energy: 1
+
+Zoom is moving
+Zoom: stamina: 1, energy: 1
+
+Step: 10
+Lucy got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Lucy: stamina: 3, energy: 2
+
+Dolly got hungry and is eating
+The food that was eaten was from : ENGLAND and provided 2 energy
+The food that was eaten was from : ENGLAND and provided 2 energy
+Dolly: stamina: 3, energy: 4
+
+Molly is moving
+Molly: stamina: 3, energy: 0
+
+Flash is moving
+Flash: stamina: 0, energy: 0
+
+Zoom is moving
+Zoom: stamina: 0, energy: 0
+
+Step: 11
+Lucy is moving
+Lucy: stamina: 2, energy: 1
+
+Dolly is moving
+Dolly: stamina: 2, energy: 3
+
+Molly got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Molly: stamina: 3, energy: 2
+
+Flash got tired and is sleeping
+Flash: stamina: 2, energy: 0
+
+Zoom got tired and is sleeping
+Zoom: stamina: 2, energy: 0
+
+Step: 12
+Lucy is moving
+Lucy: stamina: 1, energy: 0
+
+Dolly is moving
+Dolly: stamina: 1, energy: 2
+
+Molly is moving
+Molly: stamina: 2, energy: 1
+
+Flash got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 1 energy
+The food that was eaten was from : ENGLAND and provided 2 energy
+Flash: stamina: 2, energy: 3
+
+Zoom got hungry and is eating
+The food that was eaten was from : ENGLAND and provided 2 energy
+Zoom: stamina: 2, energy: 2
+
+Step: 13
+Lucy got hungry and is eating
+Farmer was informed that the feeder is empty and refills it. He will use special food
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Lucy: stamina: 1, energy: 2
+
+Dolly is moving
+Dolly: stamina: 0, energy: 1
+
+Molly is moving
+Molly: stamina: 1, energy: 0
+
+Flash is moving
+Flash: stamina: 1, energy: 2
+
+Zoom is moving
+Zoom: stamina: 1, energy: 1
+
+Step: 14
+Lucy is moving
+Lucy: stamina: 0, energy: 1
+
+Dolly got tired and is sleeping
+Dolly: stamina: 10, energy: 0
+
+Molly got hungry and is eating
+The food that was eaten was from : ENGLAND and provided 2 energy
+Molly: stamina: 1, energy: 2
+
+Flash is moving
+Flash: stamina: 0, energy: 1
+
+Zoom is moving
+Zoom: stamina: 0, energy: 0
+
+Step: 15
+Lucy got tired and is sleeping
+Lucy: stamina: 10, energy: 0
+
+Dolly got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+The food that was eaten was from : ENGLAND and provided 2 energy
+Dolly: stamina: 10, energy: 4
+
+Molly is moving
+Molly: stamina: 0, energy: 1
+
+Flash got tired and is sleeping
+Flash: stamina: 2, energy: 0
+
+Zoom got tired and is sleeping
+Zoom: stamina: 2, energy: 0
+
+Step: 16
+Lucy got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Lucy: stamina: 10, energy: 1
+
+Dolly is moving
+Dolly: stamina: 9, energy: 3
+
+Molly got tired and is sleeping
+Molly: stamina: 10, energy: 0
+
+Flash got hungry and is eating
+Farmer was informed that the feeder is empty and refills it. He will use simple food
+The food that was eaten was from : HOMEMADE and provided 1 energy
+The food that was eaten was from : TEXAS and provided 1 energy
+Flash: stamina: 2, energy: 2
+
+Zoom got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Zoom: stamina: 2, energy: 1
+
+Step: 17
+Lucy is moving
+Lucy: stamina: 9, energy: 0
+
+Dolly is moving
+Dolly: stamina: 8, energy: 2
+
+Molly got hungry and is eating
+The food that was eaten was from : TEXAS and provided 1 energy
+Molly: stamina: 10, energy: 1
+
+Flash is moving
+Flash: stamina: 1, energy: 1
+
+Zoom is moving
+Zoom: stamina: 1, energy: 0
+
+Step: 18
+Lucy got hungry and is eating
+The food that was eaten was from : ENGLAND and provided 2 energy
+Lucy: stamina: 9, energy: 2
+
+Dolly is moving
+Dolly: stamina: 7, energy: 1
+
+Molly is moving
+Molly: stamina: 9, energy: 0
+
+Flash is moving
+Flash: stamina: 0, energy: 0
+
+Zoom got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Zoom: stamina: 1, energy: 1
+
+Step: 19
+Lucy is moving
+Lucy: stamina: 8, energy: 1
+
+Dolly is moving
+Dolly: stamina: 6, energy: 0
+
+Molly got hungry and is eating
+The food that was eaten was from : TEXAS and provided 1 energy
+Molly: stamina: 9, energy: 1
+
+Flash got tired and is sleeping
+Flash: stamina: 2, energy: 0
+
+Zoom is moving
+Zoom: stamina: 0, energy: 0
+
+Step: 20
+Lucy is moving
+Lucy: stamina: 7, energy: 0
+
+Dolly got hungry and is eating
+Farmer was informed that the feeder is empty and refills it. He will use simple food
+The food that was eaten was from : ENGLAND and provided 2 energy
+Farmer was informed that the feeder is empty and refills it. He will use special food
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Dolly: stamina: 6, energy: 3
+
+Molly is moving
+Molly: stamina: 8, energy: 0
+
+Flash got hungry and is eating
+The food that was eaten was from : TEXAS and provided 1 energy
+The food that was eaten was from : ENGLAND and provided 2 energy
+Flash: stamina: 2, energy: 3
+
+Zoom got tired and is sleeping
+Zoom: stamina: 2, energy: 0
+
+Step: 21
+Lucy got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Lucy: stamina: 7, energy: 2
+
+Dolly is moving
+Dolly: stamina: 5, energy: 2
+
+Molly got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Molly: stamina: 8, energy: 2
+
+Flash is moving
+Flash: stamina: 1, energy: 2
+
+Zoom got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Zoom: stamina: 2, energy: 2
+
+Step: 22
+Lucy is moving
+Lucy: stamina: 6, energy: 1
+
+Dolly is moving
+Dolly: stamina: 4, energy: 1
+
+Molly is moving
+Molly: stamina: 7, energy: 1
+
+Flash is moving
+Flash: stamina: 0, energy: 1
+
+Zoom is moving
+Zoom: stamina: 1, energy: 1
+
+Step: 23
+Lucy is moving
+Lucy: stamina: 5, energy: 0
+
+Dolly is moving
+Dolly: stamina: 3, energy: 0
+
+Molly is moving
+Molly: stamina: 6, energy: 0
+
+Flash got tired and is sleeping
+Flash: stamina: 2, energy: 0
+
+Zoom is moving
+Zoom: stamina: 0, energy: 0
+
+Step: 24
+Lucy got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Lucy: stamina: 5, energy: 1
+
+Dolly got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Farmer was informed that the feeder is empty and refills it. He will use special food
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Dolly: stamina: 3, energy: 3
+
+Molly got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+Molly: stamina: 6, energy: 2
+
+Flash got hungry and is eating
+The food that was eaten was from : HOMEMADE and provided 2 energy
+The food that was eaten was from : TEXAS and provided 1 energy
+Flash: stamina: 2, energy: 3
+
+Zoom got tired and is sleeping
+Zoom: stamina: 2, energy: 0
+
+Step: 25
+Lucy is moving
+Lucy: stamina: 4, energy: 0
+
+Dolly is moving
+Dolly: stamina: 2, energy: 2
+
+Molly is moving
+Molly: stamina: 5, energy: 1
+
+Flash is moving
+Flash: stamina: 1, energy: 2
+
+Zoom got hungry and is eating
+Farmer was informed that the feeder is empty and refills it. He will use simple food
+The food that was eaten was from : HOMEMADE and provided 1 energy
+Zoom: stamina: 2, energy: 1
+
+Total refills : 5
+
+
+All the dogs contained in the farm : 
+
+Lucy
+Dolly
+Molly
+
+All the sloths contained in the farm : 
+
+Flash
+Zoom

@@ -7,16 +7,11 @@ import java.util.UUID;
  * This is a singleton factory that returns the random number generator and the
  * UUID.randomUUID().toString.
  * 
- * For testing purposes the field setToFake is set at creation so that results
- * are reproducible.
+ * To reproduce results call
  * 
- * To reproduce results call 
+ * <p><code>FarmRandom.isfake = true; </code></p>
  * 
- * FarmRandom.isfake = true; 
- * 
- * before you call the
- * 
- * first getInstance()
+ * before you call the first <code>getInstance()</code>
  */
 public class FarmRandom {
     private static FarmRandom instance;
@@ -32,7 +27,6 @@ public class FarmRandom {
     }
 
     private FarmRandom(long seed) {
-        Logger.log("SAME RANDOM NUMBERS WITH SEED: " + seed);
         random = new Random(seed);
         setToFake = true;
         usedSeed = seed;
@@ -61,7 +55,7 @@ public class FarmRandom {
     }
 
     public void reset() {
-        random = new Random(usedSeed);
+        instance = new FarmRandom(usedSeed);
     }
 
 }
