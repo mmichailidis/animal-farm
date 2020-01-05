@@ -8,9 +8,9 @@ import static com.asdt.farm.food.FoodOrigins.HOMEMADE;
 public class SpecialFood extends AbstractFood {
     private static final Integer ENERGY = 2;
     private final static FoodOrigins ORIGIN = HOMEMADE;
-    private final static String NAME = "SpecialFood";
+    public final static String SPECIAL_FOOD_NAME = "SpecialFood";
 
     public SpecialFood() {
-        super(FarmRandom.getInstance().getRandomUUID(), ENERGY, NAME, ORIGIN);
+        super(FarmRandom.getInstance().getRandomUUID(), ENERGY, SPECIAL_FOOD_NAME, ORIGIN);
     }
 }

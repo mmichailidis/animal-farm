@@ -8,9 +8,9 @@ import static com.asdt.farm.food.FoodOrigins.TEXAS;
 public class SimpleImportedFood extends AbstractImportedFood {
     private final static Integer POWER = 1;
     private final static FoodOrigins ORIGIN = TEXAS;
-    private final static String NAME = "ImportedSimpleFood";
+    public final static String IMPORTED_SIMPLE_FOOD_NAME = "ImportedSimpleFood";
 
     public SimpleImportedFood() {
-        super(FarmRandom.getInstance().getRandomUUID(), POWER, NAME ,ORIGIN);
+        super(FarmRandom.getInstance().getRandomUUID(), POWER, IMPORTED_SIMPLE_FOOD_NAME ,ORIGIN);
     }
 }

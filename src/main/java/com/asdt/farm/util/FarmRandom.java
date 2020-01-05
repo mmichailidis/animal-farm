@@ -9,7 +9,7 @@ import java.util.UUID;
  * 
  * To reproduce results call
  * 
- * <p><code>FarmRandom.isfake = true; </code></p>
+ * <p><code>FarmRandom.setfake(true); </code></p>
  * 
  * before you call the first <code>getInstance()</code>
  */

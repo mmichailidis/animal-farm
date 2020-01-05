@@ -4,7 +4,6 @@ import com.asdt.farm.util.FarmRandom;
 import com.asdt.farm.Feeder;
 import com.asdt.farm.util.Logger;
 import com.asdt.farm.food.SimpleFoodFactory;
-import com.asdt.farm.food.SimpleImportedFoodAdapter;
 import com.asdt.farm.food.homemade.SimpleFood;
 
 import java.util.Random;
@@ -20,9 +19,7 @@ public class PoorFarmer implements Farmer {
 
     @Override
     public void inform() {
-        if (feeder.getFoodTypeCount(SimpleFood.class) == 0
-                && feeder.getFoodTypeCount(SimpleImportedFoodAdapter.class) == 0) {
-
+        if (feeder.getFoodTypeCount(SimpleFood.SIMPLE_FOOD_NAME) == 0) {
             Logger.log("Farmer was informed that the feeder is empty and refills it. He will use simple food");
             feeder.addFood(SimpleFoodFactory.getInstance().makeFood(random.nextInt(2) + 5));
             refills++;

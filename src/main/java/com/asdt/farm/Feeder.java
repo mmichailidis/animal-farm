@@ -26,18 +26,14 @@ public class Feeder {
         Collections.shuffle(this.currentFood, FarmRandom.getInstance().getRandom());
     }
 
-    public <T> Long getFoodTypeCount(final Class<T> clazz) {
+    public Long getFoodTypeCount(String foodName) {
         long count = 0L;
         for (final Food vL : currentFood) {
-            if (clazz.isInstance(vL)) {
+            if (vL.getName().equals(foodName)) {
                 count++;
             }
         }
         return count;
-        // Same implementation but in Java8 streams
-        // return currentFood.stream()
-        // .filter(clazz::isInstance)
-        // .count();
     }
 
     public Food getFood() {
