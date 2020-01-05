@@ -24,14 +24,6 @@ public abstract class Animal {
         this.feeder = feeder;
     }
 
-    public EatStrategy getEatStrategy() {
-        return eatStrategy;
-    }
-
-    public void setEatStrategy(final EatStrategy eatStrategy) {
-        this.eatStrategy = eatStrategy;
-    }
-
     public void setState(AnimalState newState) {
         state = newState;
     }
