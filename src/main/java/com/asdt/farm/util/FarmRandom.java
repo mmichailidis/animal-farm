@@ -1,4 +1,4 @@
-package com.asdt.farm;
+package com.asdt.farm.util;
 
 import java.util.Random;
 import java.util.UUID;
@@ -15,10 +15,18 @@ import java.util.UUID;
  */
 public class FarmRandom {
     private static FarmRandom instance;
-    public static boolean isfake = false;
+    private static boolean isFake = false;
+
+    public static void setFake(boolean isFake){
+        FarmRandom.isFake = isFake;
+    }
+
+    public static boolean isFake(){
+        return isFake;
+    }
 
     private Random random;
-    private boolean setToFake = false;
+    private boolean setToFake;
     private long usedSeed;
 
     private FarmRandom() {
@@ -34,7 +42,7 @@ public class FarmRandom {
 
     public static FarmRandom getInstance() {
         if (instance == null) {
-            if (isfake) {
+            if (isFake) {
                 instance = new FarmRandom(0);
             } else {
                 instance = new FarmRandom();
@@ -57,5 +65,4 @@ public class FarmRandom {
     public void reset() {
         instance = new FarmRandom(usedSeed);
     }
-
 }

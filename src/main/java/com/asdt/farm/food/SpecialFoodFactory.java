@@ -1,6 +1,6 @@
 package com.asdt.farm.food;
 
-import com.asdt.farm.FarmRandom;
+import com.asdt.farm.util.FarmRandom;
 import com.asdt.farm.food.homemade.Food;
 import com.asdt.farm.food.homemade.SpecialFood;
 import com.asdt.farm.food.imported.ImportedFood;
@@ -36,12 +36,12 @@ public class SpecialFoodFactory implements FoodFactory {
     @Override
     public List<Food> makeFood(final Integer count) {
         // List<Food> foodList = new ArrayList<>();
-        // for(int i = 0; i<count; i++) {
-        // if(FarmRandom.getInstance().getRandom().nextBoolean()) {
-        // foodList.add(new SpecialFood());
-        // } else {
-        // foodList.add(new SpecialImportedFoodAdapter(new SpecialImportedFood()));
-        // }
+        // for (int i = 0; i < count; i++) {
+        //     if (FarmRandom.getInstance().getRandom().nextBoolean()) {
+        //         foodList.add(new SpecialFood());
+        //     } else {
+        //         foodList.add(new SpecialImportedFoodAdapter(new SpecialImportedFood()));
+        //     }
         // }
         // return foodList;
 
