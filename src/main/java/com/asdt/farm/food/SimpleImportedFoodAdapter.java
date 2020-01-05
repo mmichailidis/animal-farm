@@ -1,27 +1,11 @@
 package com.asdt.farm.food;
 
-import com.asdt.farm.food.homemade.Food;
 import com.asdt.farm.food.imported.SimpleImportedFood;
 
-public class SimpleImportedFoodAdapter implements Food, FoodOrigin {
-    private SimpleImportedFood importedFood;
+public class SimpleImportedFoodAdapter extends ImportedFoodAdapter {
 
     public SimpleImportedFoodAdapter(final SimpleImportedFood importedFood) {
-        this.importedFood = importedFood;
+        super(importedFood);
     }
 
-    @Override
-    public String getBarCode() {
-        return importedFood.getIdentification();
-    }
-
-    @Override
-    public Integer getEnergy() {
-        return importedFood.getPower();
-    }
-
-    @Override
-    public FoodOrigins getFoodOrigin() {
-        return importedFood.getFoodOrigin();
-    }
 }
