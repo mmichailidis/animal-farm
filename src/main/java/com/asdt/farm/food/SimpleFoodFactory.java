@@ -1,6 +1,6 @@
 package com.asdt.farm.food;
 
-import com.asdt.farm.FarmRandom;
+import com.asdt.farm.util.FarmRandom;
 import com.asdt.farm.food.homemade.Food;
 import com.asdt.farm.food.homemade.SimpleFood;
 import com.asdt.farm.food.imported.ImportedFood;

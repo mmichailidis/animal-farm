@@ -16,6 +16,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Stream;
 
+import com.asdt.farm.util.FarmRandom;
+import com.asdt.farm.util.Logger;
 import org.junit.Test;
 
 /**
@@ -52,7 +54,7 @@ public class AppTest {
     @Test
     public void testRandomFake() {
         int count = 5000;
-        FarmRandom.isfake = true;
+        FarmRandom.setFake(true);
         FarmRandom.getInstance().reset();
         Random random = FarmRandom.getInstance().getRandom();
 
@@ -76,7 +78,7 @@ public class AppTest {
     public void testRandomUUIDFake() {
         int count = 500;
 
-        FarmRandom.isfake = true;
+        FarmRandom.setFake(true);
         FarmRandom.getInstance().reset();
         List<String> list1 = new ArrayList<>();
         for (int i = 0; i < count; i++) {
@@ -125,7 +127,7 @@ public class AppTest {
         Logger.reset();
         Logger.collectInString(true);
 
-        FarmRandom.isfake = true;
+        FarmRandom.setFake(true);
         FarmRandom.getInstance().reset();
         (new Simulation()).start(25);
 

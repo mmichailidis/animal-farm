@@ -1,10 +1,9 @@
 package com.asdt.farm.farmers;
 
-import com.asdt.farm.FarmRandom;
+import com.asdt.farm.util.FarmRandom;
 import com.asdt.farm.Feeder;
-import com.asdt.farm.Logger;
+import com.asdt.farm.util.Logger;
 import com.asdt.farm.food.SpecialFoodFactory;
-import com.asdt.farm.food.SpecialImportedFoodAdapter;
 import com.asdt.farm.food.homemade.SpecialFood;
 
 import java.util.Random;
@@ -20,8 +19,7 @@ public class RichFarmer implements Farmer {
 
     @Override
     public void inform() {
-        if (feeder.getFoodTypeCount(SpecialFood.class) == 0
-                && feeder.getFoodTypeCount(SpecialImportedFoodAdapter.class) == 0) {
+        if (feeder.getFoodTypeCount(SpecialFood.SPECIAL_FOOD_NAME) == 0) {
             Logger.log("Farmer was informed that the feeder is empty and refills it. He will use special food");
             feeder.addFood(SpecialFoodFactory.getInstance().makeFood(random.nextInt(2) + 5));
             refills++;

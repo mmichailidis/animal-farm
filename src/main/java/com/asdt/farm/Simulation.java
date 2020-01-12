@@ -6,6 +6,7 @@ import com.asdt.farm.animals.SimpleEatStrategy;
 import com.asdt.farm.animals.Sloth;
 import com.asdt.farm.farmers.PoorFarmer;
 import com.asdt.farm.farmers.RichFarmer;
+import com.asdt.farm.util.Logger;
 
 import java.util.List;
 
